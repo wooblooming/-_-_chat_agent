@@ -1,0 +1,571 @@
+{
+  "name": "8baf4ab3-6e98-4c00-b182-9f42146404eb",
+  "displayName": "Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%A7%A4%EC%9E%A5%EC%82%AC%EC%A7%84.jpeg",
+            "type": "image"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "actionLink": "https://map.naver.com/p/entry/place/1376187146?c=13.00,0,0,0,dh",
+            "image": {
+              "src": {
+                "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%A1%9C%EA%B3%A0.jpeg"
+              }
+            },
+            "subtitle": "매장 정보 보러가기",
+            "title": "계림원 누룽지통닭",
+            "type": "info"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": [ "안녕하세요", "계림원 누룽지통닭 봇입니다!😁" ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": [ "문의하실 내용을 간단히", "입력하시거나 아래 버튼을", "눌러주세요👇" ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "1️⃣ 추천 메뉴"
+            }, {
+              "text": "2️⃣ 주문 조리시간"
+            }, {
+              "text": "3️⃣ 운영 시간(Break Time)"
+            }, {
+              "text": "4️⃣ 화장실 위치"
+            }, {
+              "text": "5️⃣ 이벤트 확인"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "ae2b66b2-3e1c-4965-af3d-a10bbde5231a"
+  }, {
+    "intent": "redirect.추천메뉴",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "추천메뉴",
+    "name": "d3da74ca-99c2-472f-b43d-b01e742c4d64"
+  }, {
+    "intent": "redirect.주문조리시간",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "주문조리시간",
+    "name": "55cebef3-d591-4905-a56a-d2481d5f813a"
+  }, {
+    "intent": "redirect.운영시간",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "운영시간",
+    "name": "db584645-734d-4cc0-ad65-7a4d0892f5e9"
+  }, {
+    "intent": "redirect.화장실위치",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "화장실위치",
+    "name": "c155415e-709f-4ccd-a19a-9eaefa5caa1a"
+  }, {
+    "intent": "redirect.이벤트확인",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "이벤트확인",
+    "name": "70dd8646-2e3c-45fc-86ba-d8a95cdd404e"
+  }, {
+    "intent": "메뉴보기.음료주류",
+    "triggerFulfillment": {
+    
+    },
+    "name": "27e9b073-5ffe-485e-8a7e-7a83a98bdce0"
+  }, {
+    "intent": "back.메뉴",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "추천메뉴",
+    "name": "6679b115-2456-4638-a722-d01813e92eae"
+  }, {
+    "intent": "소주.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉소주👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/make_restaurants/%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80.jpg",
+            "type": "image"
+          }, {
+            "text": [ "", "소주, 맥주, 생맥주 모두 5000원 입니다!", "", "🪙가격 : 5,000원", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "음료/주류",
+    "name": "be5c36bc-787a-46c7-874d-f63feca8b521"
+  }, {
+    "intent": "back.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "back.title",
+    "name": "cf574d09-92f5-4c02-80b2-4d09eaaf5af3"
+  }, {
+    "intent": "누룽지통닭.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉누룽지통닭👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD1.jpg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🍗 누룽지 통닭구이", "", "🪙가격 : 22,000원", "➖➖➖➖➖➖➖➖➖➖➖", "통닭구이를 드시고 나서 바닥에 깔려 있는 구수한 누룽지를 드셔보세요", "씹으면 씹을수록 구수하게 배어 나오는 풍미가 일품인 별미입니다", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "메인메뉴",
+    "name": "5d27c2f8-8819-46d0-af9c-70809a509452"
+  }, {
+    "intent": "매콤불닭.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉매콤불닭👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%A7%A4%EC%BD%A4%EB%B6%88%EB%8B%AD2.jpg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🌶️ 매콤불닭", "", "🪙가격 : 24,000원", "➖➖➖➖➖➖➖➖➖➖➖", "매콤하면서도 감칠맛 넘치는 불닭의 매력! 한 번 맛보면 자꾸 생각나는 중독적인 맛입니다.", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "메인메뉴",
+    "name": "77ed3657-312c-4524-ae74-4774c6a46344"
+  }, {
+    "intent": "콘닭.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉콘닭👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EC%BD%98%EB%8B%AD1.jpg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🌽 콘닭", "", "🪙가격 : 23,000원", "➖➖➖➖➖➖➖➖➖➖➖", "고소한 옥수수와 촉촉한 통닭의 완벽한 조합!", "달콤하고 부드러운 맛으로 남녀노소 모두에게 사랑받는 메뉴입니다", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "메인메뉴",
+    "name": "1b766cf4-de35-4db7-b64f-bb9be942df3e"
+  }, {
+    "intent": "치즈콘닭.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉치즈콘닭👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EC%B9%98%EC%A6%88%EC%BD%98%EB%8B%AD3.jpg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🧀 치즈콘닭", "", "🪙가격 : 25,000원", "➖➖➖➖➖➖➖➖➖➖➖", "고소한 치즈와 달콤한 옥수수가 어우러진 치즈콘닭!", "풍부한 치즈의 맛이 입안 가득 퍼지는 행복을 느껴보세요", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "메인메뉴",
+    "name": "49e5a05c-15a5-45ed-9e9b-692323694874"
+  }, {
+    "intent": "무뼈닭발.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉무뼈 닭발👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%8B%AD%EB%B0%9C.jpg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🔥 무뼈닭발", "", "🪙가격 : 15,000원", "➖➖➖➖➖➖➖➖➖➖➖", "매콤하고 쫄깃한 무뼈닭발!", "스트레스를 확 날려버리는 매운맛으로 인기 만점!", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "사이드메뉴",
+    "name": "40a515c7-6c42-4a25-8d15-f9bae1f2a079"
+  }, {
+    "intent": "직화닭목살.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉직화 닭목살👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%8B%AD%EB%AA%A9%EC%82%B4.jpg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🍖 직화닭목살", "", "🪙가격 : 16,000원", "➖➖➖➖➖➖➖➖➖➖➖", "직화로 구워진 닭목살의 불향이 가득!", "쫄깃하고 담백한 맛을 즐겨보세요", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "사이드메뉴",
+    "name": "a6f2c8bc-12d0-4bf2-b501-91f78de65137"
+  }, {
+    "intent": "오돌뼈.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉오돌뼈👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EC%98%A4%EB%8F%8C%EB%BC%88.jpg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🥓 오돌뼈", "", "🪙가격 : 14,000원", "➖➖➖➖➖➖➖➖➖➖➖", "아삭아삭한 식감과 매콤한 양념이 잘 어우러진 오돌뼈!", "씹는 즐거움이 가득합니다.", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "사이드메뉴",
+    "name": "8e7bcbe0-267d-4474-9345-7d5fdc17e331"
+  }, {
+    "intent": "치즈추가.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉치즈 추가👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EC%B9%98%EC%A6%88%EC%B6%94%EA%B0%80.jpeg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🧀 치즈추가", "", "🪙가격 : 4,000원", "➖➖➖➖➖➖➖➖➖➖➖", "어떤 메뉴든지 추가가능한 사이드메뉴입니다!", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "사이드메뉴",
+    "name": "b3eebb33-33a5-4745-b091-ae27c9a3db04"
+  }, {
+    "intent": "콘추가.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉콘 추가👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EC%BD%98%EC%B6%94%EA%B0%80.jpeg",
+            "type": "image"
+          }, {
+            "text": [ "➖➖➖➖➖➖➖➖➖➖➖", "🌽 콘 추가", "", "🪙가격 : 3,000원", "➖➖➖➖➖➖➖➖➖➖➖", "어떤 메뉴든 추가 가능한 사이드입니다!", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "사이드메뉴",
+    "name": "ec19a440-7b4c-4f11-8c8c-52c167df009b"
+  }, {
+    "intent": "맥주.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉맥주/생맥주👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/make_restaurants/%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80.jpg",
+            "type": "image"
+          }, {
+            "text": [ "", "소주, 맥주, 생맥주 모두 5000원 입니다!", "", "🪙가격 : 5,000원", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "음료/주류",
+    "name": "d31589af-3c21-4290-b80e-b88f45849039"
+  }, {
+    "intent": "음료수.Ask",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉음료수👈",
+            "type": "list"
+          }, {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/make_restaurants/%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80.jpg",
+            "type": "image"
+          }, {
+            "text": [ "", "음료에는 콜라,사이다가 있고, 모두 2,000원 입니다!", "", "🪙가격 : 2,000원", "", "옵션을 선택하거나 자유롭게 질문해주세요." ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "음료/주류",
+    "name": "4371513c-5694-44cc-8e46-f8c877cd57e4"
+  }, {
+    "intent": "메뉴보기.메인메뉴",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "메인메뉴",
+    "name": "6a18e1c0-0169-42ea-99aa-c35b8dc125e6"
+  }, {
+    "intent": "메뉴보기.사이드메뉴",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "사이드메뉴",
+    "name": "0d8a24d3-9c55-4f11-8902-f576e4c1f03b"
+  }, {
+    "intent": "메뉴보기.음료주류",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "음료/주류",
+    "name": "89d3a7c0-d084-49c6-b746-b0a2f5ed7a58"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "text": [ "😵 아직 정확히 학습되지 않은 질문입니다", "다음 업데이트에 추가적으로 학습 될 예정입니다!", "", "메인으로 이동해서 궁금한 점을 질문해주시거나 자주 묻는 질문을 클릭 해주세요" ],
+            "type": "description"
+          }, {
+            "options": [ {
+              "event": {
+                "name": "back"
+              },
+              "text": "\u003c HOME \u003e",
+              "type": "button"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "f348e0de-0e87-4fa1-a20b-72e7f8b09f33"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "text": [ "😵 아직 정확히 학습되지 않은 질문입니다", "다음 업데이트에 추가적으로 학습 될 예정입니다!", "", "메인으로 이동해서 궁금한 점을 질문해주시거나 자주 묻는 질문을 클릭 해주세요" ],
+            "type": "description"
+          }, {
+            "options": [ {
+              "event": {
+                "name": "back"
+              },
+              "text": "\u003c HOME \u003e",
+              "type": "button"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "d03c79b7-dafe-4d3f-b4cc-42739e00a942"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "1c234286-2ec3-4265-8cee-1d1fc690cf7e",
+    "multiIntentSettings": {
+    
+    },
+    "languageCode": "ko"
+  } ]
+}

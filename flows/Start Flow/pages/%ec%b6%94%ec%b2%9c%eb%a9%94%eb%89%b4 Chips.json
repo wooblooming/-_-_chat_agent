@@ -1,0 +1,258 @@
+{
+  "name": "1d099abd-148b-4a36-a261-5478bcb70eb8",
+  "displayName": "추천메뉴 Chips",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "💜 계림원 메뉴보기"
+          }, {
+            "text": "🩷 계림원 추천메뉴"
+          }, {
+            "text": "💛 알레르기 요인 Check"
+          }, {
+            "text": "🩵 맵기 추천"
+          }, {
+            "text": "🧡 몇 명이서 드시나요?"
+          }, {
+            "event": {
+              "name": "back"
+            },
+            "text": "\u003c HOME \u003e",
+            "type": "button"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "ko"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "추천메뉴.계림원메뉴보기",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "계림원 메뉴판"
+            } ],
+            "title": "👉계림원 누룽지통닭 메뉴판👈",
+            "type": "list"
+          }, {
+            "text": [ "", "누룽지통닭 노량진점의 메뉴입니다!" ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "accessibilityText": "menu1 Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%A9%94%EB%89%B4%ED%8C%90.jpeg",
+            "type": "image"
+          }, {
+            "accessibilityText": "menu3 Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%A9%94%EB%89%B4%ED%8C%904.jpeg",
+            "type": "image"
+          }, {
+            "accessibilityText": "menu4 Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EB%A9%94%EB%89%B4%ED%8C%902.jpeg",
+            "type": "image"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "🍗 메인 메뉴"
+            }, {
+              "text": "🍴 세트 메뉴"
+            }, {
+              "text": "🍿 사이드 메뉴"
+            }, {
+              "text": "🍺 음료/주류"
+            }, {
+              "text": "\u003c 뒤로 \u003e"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "메뉴디테일 Chips",
+    "name": "c17c2ae1-4c8c-439b-8daf-0f8a4b771afb"
+  }, {
+    "intent": "추천메뉴.계림원추천메뉴",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉이달의 추천메뉴👈",
+            "type": "list"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": [ "계림원 누룽지통닭의 시그니쳐", "", "🔔누룽지통닭🔔", "참나무 장작으로 구워 참나무 향이", "배어있는 담백한 장작구이 통닭과", "어우러진 누룽지맛이 일품입니다", "제일먼저 드셔보셔야 할 메뉴입니다!", "➖➖➖➖➖➖➖➖➖➖➖", "🔔치즈콘닭/매콤불닭🔔", "고소하고 달콤한 맛의 치즈콘닭😁", "특제소스로 강렬한 매운맛의 매콤불닭😁", "취향에 맞는 음식을 드셔보세요!" ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EC%B9%98%EC%A6%88%EC%BD%98%EB%8B%AD%2B%EB%A7%A4%EC%BD%A4%EB%B6%88%EB%8B%AD%2B%EB%8B%AD%EB%B0%9C.jpg",
+            "type": "image"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "추천메뉴 Chips",
+    "name": "c8ce7d82-d119-46ca-a7b1-527c734aecfc"
+  }, {
+    "intent": "추천메뉴.알레르기요인체크",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "ㄴㄴ"
+            } ],
+            "title": "👉알레르기 유발정보👈",
+            "type": "list"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": [ "🥛 치즈콘닭", "(알류, 우유, 밀)", "🟥예시입니다🟥" ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "추천메뉴 Chips",
+    "name": "68d2ff46-ada1-48e7-9585-8a7e12ba4bbb"
+  }, {
+    "intent": "추천메뉴.맵기추천",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "맵기 추천"
+            } ],
+            "title": "👉매운맛 안내👈",
+            "type": "list"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": [ "🔥🔥 매콤불닭", "불닭볶음면보다 살짝 안매운맛으로,", "강렬한 매운맛을 즐기는 분들만!", "➖➖➖➖➖➖➖➖➖➖➖", "🔥 무뼈닭발", "신라면 정도의 매운맛으로,", "적당한 자극이 있는 매운맛을 찾으시는 분들!", "➖➖➖➖➖➖➖➖➖➖➖", "🔥 오돌뼈 \u0026 직화닭목살", "은은한 매콤함이 매력적인 맛으로,", "부담 없이 즐길 수 있는 정도의 매운맛!", "➖➖➖➖➖➖➖➖➖➖➖", "매운맛 정도를 참고하시고, 입맛에 맞는 메뉴를 선택해보세요! 😊" ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "accessibilityText": "Product Image",
+            "rawUrl": "https://storage.googleapis.com/lean-ai-bucket/%EA%B3%84%EB%A6%BC%EC%9B%90_%EB%88%84%EB%A3%BD%EC%A7%80%ED%86%B5%EB%8B%AD/%EC%B9%98%EC%A6%88%EC%BD%98%EB%8B%AD%2B%EB%A7%A4%EC%BD%A4%EB%B6%88%EB%8B%AD%2B%EB%8B%AD%EB%B0%9C.jpg",
+            "type": "image"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "추천메뉴 Chips",
+    "name": "7d2d766f-07ef-4a59-a596-6a9ea9f97b2e"
+  }, {
+    "intent": "추천메뉴.인원추천",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "richContent": [ [ {
+            "items": [ {
+              "description": "내부 검토 자료 안내",
+              "title": "추천메뉴"
+            } ],
+            "title": "👉몇 명이서 오셨나요?👈",
+            "type": "list"
+          } ] ]
+        },
+        "languageCode": "ko"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": [ "🔴 식사량은 개인마다 다릅니다", "", "🍴1 ~ 2명(가벼운 식사)", "추천 양 : 1마리", "한두 명이 간단하게 먹거나 식사로 즐길 때는 1마리가 적당합니다", "➖➖➖➖➖➖➖➖➖➖➖", "🍴2 ~ 3명(식사 대용)", "추천 양 : 1 ~ 2마리 \u0026 사이드", "통닭을 메인 식사를 드실때는 인당 1인분으로 잡고,", "통닭 한마리에 닭발, 오돌뼈 등 다른 사이드 메뉴를 주문하시면 충분합니다!", "➖➖➖➖➖➖➖➖➖➖➖", "🍴3 ~ 4명(친구들과 함께 즐길 때)", "추천 양 : 2마리 \u0026 사이드", "3명부터는 사람수에 맞게 2마리 정도로 추천합니다!", "다양한 맛을 시도하시려면 조금 넉넉하게 주문하시는게 좋습니다!", "➖➖➖➖➖➖➖➖➖➖➖", "🍴4명이상(모임 또는 파티)", "추천 양 : 2 ~ 3마리 \u0026 사이드", "4명 이상이 함께 먹는다면 각자의 식사량을 고려해 사이드를 늘리는 것이 좋습니다!", "양을 늘려도 부담스럽지 않기 때문에 여유있게 주문하시면 좋습니다!" ],
+            "type": "description"
+          } ] ]
+        },
+        "languageCode": "ko"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "추천메뉴 Chips",
+    "name": "bcdb2fb4-0ad9-4e08-ae02-3ef01463d1f4"
+  }, {
+    "intent": "back.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "back.title",
+    "name": "35b78e12-6646-4b0f-9ea4-57f598955ecf"
+  }, {
+    "intent": "back.메뉴",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "추천메뉴",
+    "name": "7cc7bf2c-62fe-463b-9fb8-6c3213ee5afc"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "back.title",
+    "event": "back",
+    "triggerFulfillment": {
+    
+    },
+    "name": "da1927f7-d8aa-4a4a-8919-667280e35575"
+  } ]
+}

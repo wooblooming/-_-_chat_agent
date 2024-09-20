@@ -1,0 +1,169 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "2",
+      "auto": true
+    }, {
+      "text": "명인데",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "4",
+      "auto": true
+    }, {
+      "text": "명인데",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "3",
+      "auto": true
+    }, {
+      "text": "명인데",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "몇 명이서",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "음식 양이",
+      "auto": true
+    }, {
+      "text": " 어떻게 돼?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "음식 양",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "🧡"
+    }, {
+      "text": " 몇명"
+    }, {
+      "text": "이"
+    }, {
+      "text": "서드"
+    }, {
+      "text": "시나요?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "🧡"
+    }, {
+      "text": " 몇명이서 "
+    }, {
+      "text": "드시"
+    }, {
+      "text": "나요?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "🧡 몇 명이서 드시나요?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "3"
+    }, {
+      "text": "명이서 "
+    }, {
+      "text": "먹을 음식"
+    }, {
+      "text": " 양을 알려줘"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "4"
+    }, {
+      "text": "명이면 "
+    }, {
+      "text": "몇인분"
+    }, {
+      "text": " 시켜야 "
+    }, {
+      "text": "해"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "2"
+    }, {
+      "text": "명이서 먹는데 몇인분 시켜야 "
+    }, {
+      "text": "해"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "몇"
+    }, {
+      "text": "인분"
+    }, {
+      "text": "이"
+    }, {
+      "text": " 적당할까?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "몇명"
+    }, {
+      "text": "이"
+    }, {
+      "text": "서드시나요"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "몇명이서 "
+    }, {
+      "text": "드시"
+    }, {
+      "text": "나요?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  }, {
+    "parts": [ {
+      "text": "몇 명이서 드시나요?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "ko"
+  } ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "3ec77d39-08d2-4e86-ab6c-9466f763c005",
+  "displayName": "운영시간",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "richContent": [ [ {
+          "items": [ {
+            "description": "내부 검토 자료 안내",
+            "title": "운영시간"
+          } ],
+          "title": "👉운영 시간 FAQ👈",
+          "type": "list"
+        } ] ]
+      },
+      "languageCode": "ko"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "text": [ "안녕하세요! 계림원 누룽지통닭을 찾아주셔서 감사합니다. 😊", "", "저희 가게의 운영 시간은 아래와 같습니다", "▪ 평일 (화~토): 오후 17:00 ~ 오후 24시", "▪ 주말 (일): 오후 17:30 ~ 오전 02시", "", "⚠ BreakTime은 ???입니다. ⚠", "⚠ 라스트오더 평일22:00, 일요일23:00 ⚠", "", "🔔유의사항🔔", "오후에는 손님이 많습니다", "", "📞 050-71386-52763" ],
+          "type": "description"
+        } ] ]
+      },
+      "languageCode": "ko"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "event": {
+              "name": "back"
+            },
+            "text": "\u003c HOME \u003e",
+            "type": "button"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "ko"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "back.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "back.title",
+    "name": "e0114271-e8b9-4044-9b5c-0994a467d8cd"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "back.title",
+    "event": "back",
+    "triggerFulfillment": {
+    
+    },
+    "name": "c3f091cb-c729-4a57-ad7b-bfb2ca666f03"
+  } ]
+}

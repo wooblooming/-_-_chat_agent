@@ -1,0 +1,39 @@
+{
+  "name": "92ea2aae-36fd-4452-8238-e7457606bd3e",
+  "displayName": "음료/주류",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "소주"
+          }, {
+            "text": "맥주"
+          }, {
+            "text": "생맥주"
+          }, {
+            "text": "음료수"
+          }, {
+            "text": "\u003c 뒤로 \u003e"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "ko"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "back.메뉴",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "추천메뉴",
+    "name": "b9efc2a6-1800-4e16-94af-23925bceedfd"
+  } ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "11710bd0-d6c5-4ea8-b10f-726a7bc413d9",
+  "displayName": "메인메뉴",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "누룽지통닭"
+          }, {
+            "text": "콘닭"
+          }, {
+            "text": "치즈콘닭"
+          }, {
+            "text": "매콤불닭"
+          }, {
+            "text": "\u003c 뒤로 \u003e"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "ko"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "back.메뉴",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "추천메뉴",
+    "name": "5e1a9787-9501-4132-b25f-f7ce109c6da8"
+  } ]
+}
